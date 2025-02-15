@@ -1,0 +1,28 @@
+{
+  "columns": [
+    { "header": "Row", "key": "id" },
+    { "header": "ID", "key": "id", "type": "number", "placeholder": "ID" },
+    {
+      "header": "Name",
+      "key": "name",
+      "type": "text",
+      "placeholder": "Enter name"
+    },
+    {
+      "header": "Gender",
+      "key": "gender",
+      "type": "select",
+      "options": [
+        { "value": "M", "text": "Option1" },
+        { "value": "F", "text": "Option2" }
+      ]
+    },
+    {
+      "header": "Score",
+      "key": "score",
+      "type": "number",
+      "placeholder": "Enter score"
+    }
+  ],
+  "data": [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}]
+}
