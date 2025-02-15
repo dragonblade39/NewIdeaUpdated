@@ -331,8 +331,16 @@ const Navbar = () => {
     }
   };
 
+  // Only open Component1 if the double-clicked node is the 1st parent's 1st child
   const handleDoubleClick = (node) => {
-    setShowComponent1(true);
+    if (
+      treeData.length > 0 &&
+      treeData[0].children &&
+      treeData[0].children.length > 0 &&
+      node.id === treeData[0].children[0].id
+    ) {
+      setShowComponent1(true);
+    }
   };
 
   const renderTree = (node, siblings, level = 0) => {
